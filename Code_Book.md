@@ -1,16 +1,11 @@
-# *Cleaning and Getting Data* course project code book
-
-### Analysis process
-
-The analysis script, `run_analysis.R` reads in the processed experiment data and performs a number of steps to get it into summary form.
-
+# Code Book
 
 ### Columns in output file
 
 The columns included in the output file are listed below:
 
   - subjectId - The id of the experiment participant.
-  - activityLbls - The name of the activity that the measurements correspond to, like `LAYING` or `WALKING`.
+  - activityLbl - The name of the activity that the measurements correspond to, like `LAYING` or `WALKING`.
 
 All of the following fields represent the mean of recorded data points for the given subject and activity. The detailed description of the different measurement types can be found in the `features_info.txt` file included in the data [zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
