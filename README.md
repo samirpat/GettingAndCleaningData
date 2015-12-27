@@ -1,5 +1,4 @@
-## Getting and Cleaning of Data class Project
-# Contents
+## Getting and Cleaning of Data Project
 
 # Steps to run the Project
 1. Read the code book to understand each variable measurements
