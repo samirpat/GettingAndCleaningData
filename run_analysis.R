@@ -47,12 +47,13 @@ runAnalysis <- function()
   
   ##Replace Activity Code with Activity Name in data sets
   mixObs$activityLbl <- as.character(activityLbls[match(mixObs$activityLbl,activityLbls$V1),'V2'])                    
-  
+
   ##Group rows by subject and Activity and summarize mean of each measuremennts
-  data.summary <- mixObs %>% group_by(subjectId,activityLbl) 
-                        %>% summarise_each(funs(mean))
+  summaryData <- mixObs %>%
+    group_by(subjectId, activityLbl) %>%
+    summarise_each(funs(mean))
   
  
  ##write summary to a file summary.txt
- write.table(data.summary,file="summary.txt",row.names = FALSE)
+ write.table(summaryData,file="summary.txt",row.names = FALSE)
 }
